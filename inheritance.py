@@ -8,7 +8,7 @@ class Robot:
     def say_hi(self):
         print("Hi, I am " + self.name)
 
-class perfomance:
+class Perfomance:
     def __init__(self,memory,speed):
         self.memory = memory
         self.speed = speed
@@ -26,10 +26,10 @@ class PhysicianRobot(Robot):
        super().__init__(name,function,manufacture_year)
        self.use = use
 
-class AIROBOT(Robot,perfomance):
+class AIROBOT(Robot,Perfomance):
     def __init__(self,name,function,manufacture_year,memory,speed):
         Robot.__init__(self, name,function,manufacture_year)
-        perfomance.__init__(self,memory,speed)
+        Perfomance.__init__(self,memory,speed)
        
 airobot = AIROBOT("hari","work",2016,128,10)
 
